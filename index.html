@@ -10,13 +10,26 @@
     <header>
         <h1>TechNews</h1>
         <p>Tu portal de tecnología y computación</p>
-        
         <nav>
-            <ul>
-                <li><a href="noticias.html">Noticias</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#articulos">Artículos</a></li>
-            </ul>
+            <!--Menú interactivo usando elementos semanticos-->
+            <details>
+                <summary>📋 Menú Principal</summary>
+                <ul>
+                    <li><a href="noticias.html">📰Noticias</a></li>
+                    <li><a href="#contacto">📞Contacto</a></li>
+                    <li><a href="#articulos">📖Artículos</a></li>
+                </ul>
+            </details>
+            <!--Menú de secciones-->
+            <details>
+                <summary>🔗 Recursos Externos</summary>
+                <ul>
+                    <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a></li>
+                    <li><a href="https://stackoverflow.com" target="_blank">Stack Overflow</a></li>
+                    <li><a href="https://github.com" target="_blank">GitHub</a></li>
+                    <li><a href="https://w3schools.com" target="_blank">W3Schools</a></li>
+                </ul>
+            </details>
         </nav>
     </header>
 
@@ -29,6 +42,7 @@
             <article>
                 <header>
                     <h3>Inteligencia Artificial: El Futuro de la Programación</h3>
+                    <time datetime="2025-09-28">28 de Septiembre, 2025</time>
                 </header>
                 
                 <p>
@@ -41,12 +55,28 @@
                     <img src="images/img-ia.webp" alt="Inteligencia Artificial en Programación" width="300" height="200">
                     <figcaption>La IA transformando el desarrollo de software</figcaption>
                 </figure>
+                <!-- Detalles adicionales del artículo -->
+                <details>
+                    <summary>🔍 Más detalles sobre IA en programación</summary>
+                    <p>
+                        Las herramientas como GitHub Copilot, ChatGPT y Claude están permitiendo a los 
+                        desarrolladores escribir código más rápido y eficiente. Sin embargo, es importante 
+                        entender que estas herramientas son asistentes, no reemplazos del conocimiento humano.
+                    </p>
+                    <ul>
+                        <li>Autocompletado inteligente de código</li>
+                        <li>Generación de tests automáticos</li>
+                        <li>Documentación automática</li>
+                        <li>Detección de bugs y vulnerabilidades</li>
+                    </ul>
+                </details>
             </article>
 
             <!-- Artículo 2 -->
             <article>
                 <header>
-                    <h3>Computación Cuántica: La Nueva Frontera</h3>
+                    <h3>Computación Cuántica: La Nueva Frontera</h3>`
+                    <time datetime="2025-09-27">27 de Septiembre, 2025</time>
                 </header>
                 
                 <p>
@@ -59,12 +89,24 @@
                     <img src="https://lh3.googleusercontent.com/6vp3l2_4XoaWmuEBFCeh_3DT0we61agsy3Whs8bBa5JZt-l4jcnJv1uMV5bbBAZN4eIJS8JW9_o83yDeyvGTvuOXyMWnYFwuJj6ciD9D0TNYQ1TIMPHQUL2Yj4dIPhgyCvGmkrJfZDXJDNpFRlbODLoanpz2pB3mJvUPwgk1-XrmE7lRQqjc2YAEmKSu_aP7" alt="Computación Cuántica" width="300" height="200">
                     <figcaption>Procesador cuántico de última generación</figcaption>
                 </figure>
+                <!-- Detalles adicionales -->
+                <details>
+                    <summary>⚛️ Aplicaciones de la computación cuántica</summary>
+                    <p>La computación cuántica tiene el potencial de revolucionar múltiples industrias:</p>
+                    <ul>
+                        <li><strong>Criptografía:</strong> Nuevos métodos de encriptación y desencriptación</li>
+                        <li><strong>Medicina:</strong> Simulación de moléculas para desarrollo de fármacos</li>
+                        <li><strong>Finanzas:</strong> Optimización de carteras y análisis de riesgo</li>
+                        <li><strong>Logística:</strong> Resolución de problemas de optimización complejos</li>
+                    </ul>
+                </details>
             </article>
 
             <!-- Artículo 3 -->
             <article>
                 <header>
                     <h3>Desarrollo Web: Tendencias 2025</h3>
+                    <time datetime="2025-09-26">26 de Septiembre, 2025</time>
                 </header>
                 
                 <p>
@@ -77,36 +119,61 @@
                     <img src="https://www.justinmind.com/wp-content/webp-express/webp-images/uploads/2019/09/course-management-card-ui.png.webp" alt="Desarrollo Web 2025" width="300" height="200">
                     <figcaption>Interfaces web modernas y responsivas</figcaption>
                 </figure>
+                <!-- FAQ interactivo -->
+                <details>
+                    <summary>❓ FAQ sobre Desarrollo Web 2025</summary>
+                         <details>
+                           <summary>¿Qué es HTML semántico?</summary>
+                           <p>HTML semántico usa elementos que dan significado al contenido, como &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;article&gt;, etc.</p>
+                        </details>
+                    
+                        <details>
+                           <summary>¿Por qué es importante la accesibilidad?</summary>
+                           <p>La accesibilidad web garantiza que todas las personas, incluidas aquellas con discapacidades, puedan usar y navegar por los sitios web.</p>
+                        </details>
+                    
+                        <details>
+                           <summary>¿Cuáles son las tendencias actuales?</summary>
+                           <p>Algunas tendencias incluyen Progressive Web Apps (PWA), WebAssembly, componentes web nativos, y frameworks como React, Vue y Angular.</p>
+                        </details>
+                </details>
             </article>
         </section>
     </main>
 
     <!-- Enlaces relacionados (barra lateral) -->
     <aside>
-        <h3>Enlaces Relacionados</h3>
-        <nav>
-            <ul>
-                <li><a href="https://slack.com/intl/es-pe" target="_blank">Slack</a></li>
-                <li><a href="https://stackoverflow.com" target="_blank">Stack Overflow</a></li>
-                <li><a href="https://github.com" target="_blank">GitHub</a></li>
-                <li><a href="https://codepen.io" target="_blank">CodePen</a></li>
-                <li><a href="https://w3schools.com" target="_blank">W3Schools</a></li>
-            </ul>
-        </nav>
+        <details>
+            <summary>🔗Enlaces Relacionados</summary>
+            <nav>
+                <ul>
+                    <li><a href="https://slack.com/intl/es-pe" target="_blank">Slack</a></li>
+                    <li><a href="https://stackoverflow.com" target="_blank">Stack Overflow</a></li>
+                    <li><a href="https://github.com" target="_blank">GitHub</a></li>
+                    <li><a href="https://codepen.io" target="_blank">CodePen</a></li>
+                    <li><a href="https://w3schools.com" target="_blank">W3Schools</a></li>
+                </ul>           
+            </nav>
+        </details>
     </aside>
 
     <!-- Pie de página con información de contacto -->
     <footer id="contacto">
-        <h2>Información de Contacto</h2>
-        
-        <address>
-            <p><strong>TechNews</strong></p>
-            <p>Email: <a href="mailto:info@technews.com">info@technews.com</a></p>
-            <p>Teléfono: <a href="tel:+51987654321">+51 987 654 321</a></p>
-            <p>Dirección: Av. Tecnología 123, Arequipa, Perú</p>
-        </address>
-        
+        <details>
+            <summary>Información de Contacto</summary>       
+            <address>
+                <p><strong>TechNews</strong></p>
+                <p>Email: <a href="mailto:info@technews.com">info@technews.com</a></p>
+                <p>Teléfono: <a href="tel:+51987654321">+51 987 654 321</a></p>
+                <p>Dirección: Av. Tecnología 123, Arequipa, Perú</p>
+            </address>
+        </details>
         <p>&copy; 2025 TechNews. Todos los derechos reservados.</p>
+        <nav>
+            <a href="#top">Ir arriba</a> |
+            <a href="noticias.html">Noticias</a> |
+            <a href="#articulos">Artículos</a>
+        </nav>
     </footer>
 </body>
 </html>
